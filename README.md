@@ -138,7 +138,7 @@ This is the following user flow for the game:
 
 This is the following game logic for the game:
 
-![GameLogicFlow](/home/rsanchez/Github/simon-says/images/gamelogicFlow.png)
+![GameLogicFlow](images/gamelogicFlow.png)
 
 **Description:** The game logic will play out like this:
 
