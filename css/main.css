@@ -29,22 +29,37 @@
   border-radius: 250px;
 }
 
-#top-left-button {
+#blue {
   background-color: blue;
   border-radius: 250px 0px 0px 0px;
 }
 
-#top-right-button {
+#blue:active {
+  background-color: grey;
+}
+
+#red {
   background-color: red;
   border-radius: 0px 250px 0px 0px;
 }
 
-#bottom-left-button {
+#red:active {
+  background-color: grey;
+}
+
+#green {
   background-color: green;
   border-radius: 0px 0px 0px 250px;
 }
+#green:active {
+  background-color: grey;
+}
 
-#bottom-right-button {
+#yellow {
   background-color: yellow;
   border-radius: 0px 0px 250px 0px;
+}
+
+#yellow:active {
+  background-color: grey;
 }

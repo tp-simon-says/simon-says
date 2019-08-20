@@ -12,22 +12,41 @@
     <header><h1 class="title">Simon Says!</h1></header>
 
     <section class="button-container">
-      <button id="start-button">Start</button>
+      <button id="start-button" onclick="pressButton('Start Button')">
+        Start
+      </button>
+      <div id="white-space"></div>
       <table class="group-button">
         <tr>
           <th>
-            <button class="play-button" id="top-left-button">Blue</button>
+            <button class="play-button" id="blue" onclick="pressButton('blue')">
+              Blue
+            </button>
           </th>
           <th>
-            <button class="play-button" id="top-right-button">Red</button>
+            <button class="play-button" id="red" onclick="pressButton('red')">
+              Red
+            </button>
           </th>
         </tr>
         <tr>
           <th>
-            <button class="play-button" id="bottom-left-button">Green</button>
+            <button
+              class="play-button"
+              id="green"
+              onclick="pressButton('green')"
+            >
+              Green
+            </button>
           </th>
           <th>
-            <button class="play-button" id="bottom-right-button">Yellow</button>
+            <button
+              class="play-button"
+              id="yellow"
+              onclick="pressButton('yellow')"
+            >
+              Yellow
+            </button>
           </th>
         </tr>
       </table>
