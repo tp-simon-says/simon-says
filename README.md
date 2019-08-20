@@ -134,11 +134,57 @@ This is the following user flow for the game:
 
 **Description:** It starts with the user wants to play the game, the user begins to click on "Start" to begin the game. The game prompts the user to select difficulty. Once the user selects a difficulty the game begins the first round. The round ends with either the user successfully inputted the correct sequence of button presses or failed to do that. If the user succeeded the game will loop again adding an addition button press (depending on difficulty). If the user fails the game will notify the user on their score an prompt the user if they want to play again. If the user selects no then the game ends. If the user selects yes then they choose the difficulty and play again.
 
+
+
 This is the following game logic for the game:
 
-![Placeholder](images/placeholder.png)
+![GameLogicFlow](/home/rsanchez/Github/simon-says/images/gamelogicFlow.png)
 
-**Description:** Coming soon
+**Description:** The game logic will play out like this:
+
+1. User will choose a difficulty
+
+2. Game begins by generating a random array of integers ranging from 1 - 4
+
+3. Game counter starts at zero called n. The counter will keep track of the position on where to stop in the array. Example:
+
+   ```text
+   Generated array: arr = [1,3,4,2,4,4,1,2,4,3,...]
+   Game counter will be initialized to 0, thus loading the first item being 1. 
+   For classic: Counter will be incremented by 1 and load seqential items:
+       Round 1 - [1]
+       n+1
+       Round 2 - [1,3]
+       n+1
+       Round 3 - [1,3,4]
+       n+1
+       Etc.
+   For other difficulties such as insane, the counter will increment by 3 so:
+   	Round 1 - [1]
+   	n+3
+   	Round 2 - [1,3,4,2]
+   	n+3
+   	Round 3 - [1,3,4,2,4,4,1]
+   	n+3
+   	Etc.
+   ```
+
+4. The game now enters the game loop:
+
+   1. Game calls the CPU_Player object with the difficulty passed through
+      
+      * CPU_Player then plays out the game on the UI (show the button presses in order)
+      
+   2. Game now waits until the user click / tap on a tile
+      * Every press is compared to the list played by the CPU
+      
+      * Once a mismatch is detected the game will trigger the ending screen
+      
+   3. Increment counter if player succeeds
+   
+   4. Restart game loop
+   
+5. If the player makes a mistake the ending score is shown with a message they lost
 
 #### Wire Frames
 
@@ -150,7 +196,7 @@ These are tentative wire frames for the web application:
 
 **Description:** This is the layout of the game as it is running in the browser. Note this design will change throughout the development of this application.
 
-**Ending Modal**
+**Ending Wire frame**
 
 ![PlaceHolder](images/placeholder.png)
 
