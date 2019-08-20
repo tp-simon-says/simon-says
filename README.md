@@ -44,16 +44,16 @@ The disc has four colored buttons, each producing a particular tone when it is p
 
 ## Release History
 
-Any updates will get posted on the wiki every now or then. What is listed down here is what has been deployed:
+Any updates will get posted on the [wiki](https://github.com/tp-simon-says/simon-says/wiki) every now or then. What is listed down here is what has been deployed:
 
 * **August 23, 2019**
   * Tentative Base Launch 
 
 ## Contributions
 
-Wanna help for free? (•̀ᴗ•́)و ̑̑ 
+Hey *psst*,  Wanna help for free? (•̀ᴗ•́)و ̑̑ 
 
-Please refer to the Contributing.md file at the root directory of the repository.
+Please refer to the [CONTRIBUTING.md](https://github.com/tp-simon-says/simon-says/blob/master/CONTRIBUTING.md) file at the root directory of the repository for more in depth information.
 
 ## Authors
 
@@ -80,7 +80,7 @@ Increase the mental capacity of individuals through a personal incentivize train
 #### MVP
 
 1. One Player (You hopefully)
-2. Three difficulties with four standard buttons
+2. Three difficulties each with four standard buttons
 3. Game plays by rounds
 4. Each round will add an additional button press based on difficulty:
    - Classic will add just one button press at a time
@@ -130,13 +130,13 @@ This is the file structure used for the project:
 
 This is the following user flow for the game:
 
-// Insert image
+![User Flow](images/userFlow.png)
 
 **Description:** It starts with the user wants to play the game, the user begins to click on "Start" to begin the game. The game prompts the user to select difficulty. Once the user selects a difficulty the game begins the first round. The round ends with either the user successfully inputted the correct sequence of button presses or failed to do that. If the user succeeded the game will loop again adding an addition button press (depending on difficulty). If the user fails the game will notify the user on their score an prompt the user if they want to play again. If the user selects no then the game ends. If the user selects yes then they choose the difficulty and play again.
 
 This is the following game logic for the game:
 
-// Coming soon
+![Placeholder](images/placeholder.png)
 
 **Description:** Coming soon
 
@@ -144,10 +144,15 @@ This is the following game logic for the game:
 
 These are tentative wire frames for the web application:
 
-// Coming soon
+**Main Game**
 
-## 
+![GameWireframe](images/wireframe.png)
 
+**Description:** This is the layout of the game as it is running in the browser. Note this design will change throughout the development of this application.
 
+**Ending Modal**
 
+![PlaceHolder](images/placeholder.png)
+
+**Description:** Coming Soon
 
