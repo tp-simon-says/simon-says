@@ -2,6 +2,10 @@
 
 > A memory enhancement game
 
+![Sample Screenshot](images/placeholder.png)
+
+**Current Build:** null
+
 ## Getting Started
 
 ### Prerequisites
@@ -36,7 +40,7 @@ This game boasts the following features:
 
 The disc has four colored buttons, each producing a particular tone when it is pressed or activated by the device. A round in the game consists of the device lighting up one or more buttons in a random order, after which the player must reproduce that order by pressing the buttons. As the game progresses, the number of buttons to be pressed increases.
 
-**Protip:** Writing down the pattern will only work up to a point!
+**Protip:** Writing down the pattern will only work up to a point! ヾ(-_- )ゞ
 
 ## Release History
 
@@ -44,6 +48,22 @@ Any updates will get posted on the wiki every now or then. What is listed down h
 
 * **August 23, 2019**
   * Tentative Base Launch 
+
+## Contributions
+
+Wanna help for free? (•̀ᴗ•́)و ̑̑ 
+
+Please refer to the Contributing.md file at the root directory of the repository.
+
+## Authors
+
+* (⌐■_■)  **Jonathan Azali** - *Initial work* - [jonazali](https://github.com/jonazali)
+
+* ᕙ(⇀‸↼‶)ᕗ  **Roberto Sanchez** - *Initial work* - [Zyxel-1](https://github.com/Zyxel-1)
+
+See also the list of [contributors](https://github.com/tp-simon-says/simon-says/graphs/contributors) who participated in this project.
+
+
 
 ## Project Documentation
 
@@ -72,8 +92,8 @@ Increase the mental capacity of individuals through a personal incentivize train
 
 #### Post - MVP
 
-1. **Local** Multi-player (Maximum to 4)
-2. A timer to "motivate" players each round
+1.  **Local** Multi-player (Maximum to 4) (ง •̀\_•́)ง  vs  ผ(•̀\_•́ผ)
+2.  A timer to "motivate" players each round ◔_◔
 
 ### Technical Specification
 
@@ -125,6 +145,8 @@ This is the following game logic for the game:
 These are tentative wire frames for the web application:
 
 // Coming soon
+
+## 
 
 
 
