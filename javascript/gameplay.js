@@ -1,13 +1,9 @@
 /* eslint-disable func-names */
-import { startGame, difficulty } from './javascript/gameSetup.js';
+import { startGame, difficulty } from './gameSetup.js';
 
-const numArray = [1, 2, 3, 4, 3, 2, 1];
+const ifWin = true;
+const numArray = [];
 
-document.getElementById('start-button').addEventListener('click', () => {
-  startGame(document.getElementById('start-button'));
-});
-
-// We call Game
 function generateArray(tempArray) {
   tempArray.push(Math.ceil(Math.random() * 4));
   return tempArray;
@@ -66,6 +62,14 @@ function myLoop(tempArray) {
   }, 750);
 }
 
-generateArray(numArray);
-console.log(numArray);
-myLoop(numArray);
+// If statement to see whether player lost
+// Iterate by rounds
+// Wait for user input
+// If statement
+
+function playGame(tempArray, status) {
+  if (status) {
+    generateArray(tempArray);
+    myLoop(tempArray);
+  }
+}
