@@ -16,6 +16,13 @@ function unpressButton(buttonId) {
   temp.style.backgroundColor = buttonId;
 }
 
+function flashButton(color) {
+  pressButton(color);
+  setTimeout(function() {
+    unpressButton(color);
+  }, 500);
+}
+
 function echoPattern(num) {
   switch (num) {
     default:
@@ -36,13 +43,6 @@ function echoPattern(num) {
   }
 }
 
-function flashButton(color) {
-  pressButton(color);
-  setTimeout(function() {
-    unpressButton(color);
-  }, 500);
-}
-
 let i = 0; //  set your counter to 1
 
 // const numArray = [1, 2, 3, 4];
@@ -60,11 +60,6 @@ function myLoop(tempArray) {
   }, 750);
 }
 
-myLoop(numArray); //  start the loop
-
 generateArray(numArray);
 console.log(numArray);
-
-// flashButton('blue');
-
-// echoPattern(numArray);
+myLoop(numArray);
