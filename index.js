@@ -1,5 +1,9 @@
 /* eslint-disable func-names */
+import { startGame } from './javascript/gameSetup.js';
+
 const numArray = [1, 2, 3, 4, 3, 2, 1];
+
+document.getElementById('start-button').addEventListener('click', startGame);
 
 function generateArray(tempArray) {
   tempArray.push(Math.ceil(Math.random() * 4));
