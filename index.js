@@ -1,10 +1,17 @@
 /* eslint-disable func-names */
-import { startGame } from './javascript/gameSetup.js';
+import { startGame, selectDifficulty } from './javascript/gameSetup.js';
 
 const numArray = [1, 2, 3, 4, 3, 2, 1];
+let difficulty = 0;
 
-document.getElementById('start-button').addEventListener('click', startGame);
+// let difficulty = 0;
+document.getElementById('start-button').addEventListener('click', () => {
+  startGame(document.getElementById('start-button'));
+});
 
+difficulty = selectDifficulty();
+
+// We call Game
 function generateArray(tempArray) {
   tempArray.push(Math.ceil(Math.random() * 4));
   return tempArray;
