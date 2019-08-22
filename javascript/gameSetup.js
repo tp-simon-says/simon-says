@@ -1,7 +1,9 @@
 /* eslint-disable import/no-mutable-exports */
-import { testGame } from './gameplay.js';
+import { testGame, playGame } from './gameplay.js';
 
 export let difficulty = 0;
+let numArray = [];
+let ifLose = false;
 
 export const selectDifficulty = val => {
   console.log(`You have selected ${val}`);
@@ -20,7 +22,7 @@ export const startGame = id => {
       e.stopImmediatePropagation();
       selectDifficulty(1);
       id.innerHTML = `<div></div>`;
-      testGame();
+      playGame(numArray, ifLose);
     },
     true
   );
