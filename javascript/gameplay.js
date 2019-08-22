@@ -42,13 +42,14 @@ export function userTurn(gameArray, position, didLose, id) {
   }else{
     console.log(`Mismatch`)
     lose(gameArray.length)
+    return -1;
   }
   
 }
 function lose(rounds){
-  console.log(`You lose: YOUR HIGH SCORE: ${rounds}`)
+  console.log(`You lose: YOUR HIGH SCORE:\n ${rounds}\n Play again?`)
   // Function index resets everything
-  document.getElementById('start-button').innerHTML = `YOU LOSE\n Score:${rounds}`
+  document.getElementById('start-button').innerHTML = `YOU LOSE\n Score:${rounds} \n Play Again?`
 
 }
 export function getInput(id) {

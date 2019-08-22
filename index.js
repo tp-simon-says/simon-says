@@ -16,5 +16,13 @@ let buttons = document.querySelectorAll('button.play-button');
     button.addEventListener('click', () => {
       console.log(button.id)
       pos = userTurn(numArray, pos, ifLose, button.id);
+      if(pos === -1){
+        pos=0;
+        while(numArray.length >0){
+          numArray.pop();
+        }    
+
+        console.log(`RESET VALUES: ${pos} and ${numArray}`)
+      }
     });
   }
