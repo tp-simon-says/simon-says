@@ -1,9 +1,11 @@
 /* eslint-disable import/no-mutable-exports */
 import { testGame, playGame } from './gameplay.js';
+import { setupCPU } from './gameplayCPU.js';
 
 export let difficulty = 0;
-let numArray = [];
-let ifLose = false;
+export let numArray = [];
+export let ifLose = false;
+export let pos = 0;
 
 export const selectDifficulty = val => {
   console.log(`You have selected ${val}`);
@@ -22,7 +24,8 @@ export const startGame = id => {
       e.stopImmediatePropagation();
       selectDifficulty(1);
       id.innerHTML = `<div></div>`;
-      playGame(numArray, ifLose);
+      setupCPU(numArray);
+      
     },
     true
   );

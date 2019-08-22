@@ -1,9 +1,10 @@
 /* eslint-disable func-names */
-import { startGame, difficulty } from './javascript/gameSetup.js';
+import { startGame, difficulty, numArray, ifLose } from './javascript/gameSetup.js';
 import { generateArray, playLoop, setupCPU } from './javascript/gameplayCPU.js';
-import { getInput } from './javascript/gameplay.js';
+import { userTurn } from './javascript/gameplay.js';
 
-const numArray = [];
+let pos = 0;
+
 // export let buttonid;
 document.getElementById('start-button').addEventListener('click', () => {
   startGame(document.getElementById('start-button'));
@@ -11,10 +12,9 @@ document.getElementById('start-button').addEventListener('click', () => {
 
 let buttons = document.querySelectorAll('button.play-button');
 
-export function getButton() {
   for (const button of buttons) {
     button.addEventListener('click', () => {
-      return button.id;
+      console.log(button.id)
+      pos = userTurn(numArray, pos, ifLose, button.id);
     });
   }
-}

@@ -1,15 +1,12 @@
 /* eslint-disable func-names */
 import { startGame, difficulty } from './gameSetup.js';
 import { generateArray, playLoop, setupCPU } from './gameplayCPU.js';
-import { getButton } from '../index.js';
+
 
 // If statement to see whether player lost
 // Iterate by rounds
 // Wait for user input
 // If statement
-
-let numArray = [];
-let ifLose = false;
 
 export function playGame(tempArray, loseStatus) {
   if (loseStatus) {
@@ -31,19 +28,21 @@ export function playGame(tempArray, loseStatus) {
   }
 }
 
-function userTurn(tempArray, x) {
-  const userInput = getInput(getButton());
-  if (userInput === tempArray[x] && x === tempArray.length - 1) {
-    console.log('true');
-    return true;
-  } else if (userInput === tempArray[x]) {
-    x++;
-    console.log('single match');
-    userTurn(tempArray, x);
-  } else {
-    console.log('false');
-    return false;
+export function userTurn(gameArray, position, didLose, id) {
+  console.log(`Values: ${gameArray}, ${gameArray.length}, and ${position}, ${didLose}, and id ${id}`);
+  if(gameArray[position] === getInput(id) && position === gameArray.length - 1){
+    setupCPU(gameArray);
+    position = 0;
+    return position;
   }
+  else if(gameArray[position] === getInput(id)){
+    console.log(`match`)
+    position++;
+    return position;
+  }else{
+    console.log(`Mismatch`)
+  }
+  
 }
 
 export function getInput(id) {
