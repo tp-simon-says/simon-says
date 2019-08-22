@@ -1,4 +1,6 @@
 /* eslint-disable import/no-mutable-exports */
+import { testGame } from './gameplay.js';
+
 export let difficulty = 0;
 
 export const selectDifficulty = val => {
@@ -18,6 +20,7 @@ export const startGame = id => {
       e.stopImmediatePropagation();
       selectDifficulty(1);
       id.innerHTML = `<div></div>`;
+      testGame();
     },
     true
   );
