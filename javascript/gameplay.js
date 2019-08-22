@@ -2,7 +2,6 @@
 import { startGame, difficulty } from './gameSetup.js';
 import { generateArray, playLoop, setupCPU } from './gameplayCPU.js';
 
-
 // If statement to see whether player lost
 // Iterate by rounds
 // Wait for user input
@@ -28,29 +27,35 @@ export function playGame(tempArray, loseStatus) {
   }
 }
 
-export function userTurn(gameArray, position, didLose, id) {
-  console.log(`Values: ${gameArray}, ${gameArray.length}, and ${position}, ${didLose}, and id ${id}`);
-  if(gameArray[position] === getInput(id) && position === gameArray.length - 1){
-    setupCPU(gameArray);
+export function userTurn(gameArray, position, didLose, id, diff) {
+  console.log(
+    `Values: ${gameArray}, ${
+      gameArray.length
+    }, and ${position}, ${didLose}, and id ${id}`
+  );
+  if (
+    gameArray[position] === getInput(id) &&
+    position === gameArray.length - 1
+  ) {
+    setupCPU(gameArray, diff);
     position = 0;
     return position;
-  }
-  else if(gameArray[position] === getInput(id)){
-    console.log(`match`)
+  } else if (gameArray[position] === getInput(id)) {
+    console.log(`match`);
     position++;
     return position;
-  }else{
-    console.log(`Mismatch`)
-    lose(gameArray.length)
+  } else {
+    console.log(`Mismatch`);
+    lose(gameArray.length);
     return -1;
   }
-  
 }
-function lose(rounds){
-  console.log(`You lose: YOUR HIGH SCORE:\n ${rounds}\n Play again?`)
+function lose(rounds) {
+  console.log(`You lose: YOUR HIGH SCORE:\n ${rounds}\n Play again?`);
   // Function index resets everything
-  document.getElementById('start-button').innerHTML = `YOU LOSE\n Score:${rounds} \n Play Again?`
-
+  document.getElementById(
+    'start-button'
+  ).innerHTML = `YOU LOSE\n Score:${rounds} \n Play Again?`;
 }
 export function getInput(id) {
   switch (id) {

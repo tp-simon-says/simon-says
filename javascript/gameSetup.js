@@ -24,8 +24,7 @@ export const startGame = id => {
       e.stopImmediatePropagation();
       selectDifficulty(1);
       id.innerHTML = `<div></div>`;
-      setupCPU(numArray);
-      
+      setupCPU(numArray, difficulty);
     },
     true
   );
@@ -34,6 +33,8 @@ export const startGame = id => {
     e => {
       e.stopImmediatePropagation();
       selectDifficulty(2);
+      id.innerHTML = `<div></div>`;
+      setupCPU(numArray, difficulty);
     },
     true
   );
@@ -42,6 +43,8 @@ export const startGame = id => {
     e => {
       e.stopImmediatePropagation();
       selectDifficulty(3);
+      id.innerHTML = `<div></div>`;
+      setupCPU(numArray, difficulty);
     },
     true
   );
