@@ -1,5 +1,4 @@
 /* eslint-disable import/no-mutable-exports */
-import { testGame, playGame } from './gameplay.js';
 import { setupCPU } from './gameplayCPU.js';
 
 export let difficulty = 0;
@@ -8,9 +7,6 @@ export let ifLose = false;
 export let pos = 0;
 
 export const selectDifficulty = val => {
-  console.log(`You have selected ${val}`);
-  console.log('IVE BEEN CLICKED');
-  // Should pass value back to index.js
   difficulty = val;
 };
 

@@ -1,20 +1,12 @@
 /* eslint-disable func-names */
-import { startGame, difficulty } from './gameSetup.js';
-import { generateArray, playLoop, setupCPU } from './gameplayCPU.js';
-
-// If statement to see whether player lost
-// Iterate by rounds
-// Wait for user input
-// If statement
+import {setupCPU } from './gameplayCPU.js';
+const sound = new Audio();
 
 export function playGame(tempArray, loseStatus) {
   if (loseStatus) {
-    // TODO: Game Over Function
-    console.log('You Lose!');
+
   } else {
-    console.log('Playing...');
     setupCPU(tempArray);
-    console.log(tempArray);
     let i = 0;
     const result = userTurn(tempArray, i);
     if (result === false) {
@@ -26,8 +18,9 @@ export function playGame(tempArray, loseStatus) {
     }
   }
 }
-
 export function userTurn(gameArray, position, didLose, id, diff) {
+  
+ 
   console.log(
     `Values: ${gameArray}, ${
       gameArray.length
@@ -42,6 +35,7 @@ export function userTurn(gameArray, position, didLose, id, diff) {
     return position;
   } else if (gameArray[position] === getInput(id)) {
     console.log(`match`);
+    
     position++;
     return position;
   } else {
@@ -55,24 +49,34 @@ function lose(rounds) {
   // Function index resets everything
   document.getElementById(
     'start-button'
-  ).innerHTML = `YOU LOSE\n Score:${rounds} \n Play Again?`;
+  ).innerHTML = `
+  <img class="diff" src="../images/lose.png"/>
+  \n Score:${rounds} \n Play Again?\n [Click Here]`;
+  // play sound
 }
+
 export function getInput(id) {
   switch (id) {
     default:
       return error;
     case 'blue':
+        sound.src = "./sounds/1.wav";
+        sound.play();
       return 1;
     case 'red':
+        sound.src = "./sounds/2.mp3";
+        sound.play();
       return 2;
     case 'green':
+        sound.src = "./sounds/6.wav";
+        sound.play();
       return 3;
     case 'yellow':
+        sound.src = "./sounds/4.wav";
+        sound.play();
       return 4;
   }
 }
-
-//playGame(numArray, ifLose);
 
 export function testGame() {
   console.log('game start');
