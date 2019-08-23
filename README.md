@@ -1,10 +1,10 @@
-# Simon Says
+![DarkLogo](/home/rsanchez/Github/simon-says/images/logoDark.png)
 
 > A memory enhancement game
 
-![Sample Screenshot](images/placeholder.png)
+![Sample Screenshot](images/splash.gif)
 
-**Current Build:** null
+**Current Build:** Aug 23, 2019
 
 ## Getting Started
 
@@ -36,11 +36,15 @@ This game boasts the following features:
   * **Hard** - "⚆ _ ⚆ Sweating Edition
   * **Insane** - ¯\\__(ツ)__/¯ 
 
+![Difficulties](images/difficulty.png)
+
 ### How to play
 
 The disc has four colored buttons, each producing a particular tone when it is pressed or activated by the device. A round in the game consists of the device lighting up one or more buttons in a random order, after which the player must reproduce that order by pressing the buttons. As the game progresses, the number of buttons to be pressed increases.
 
 **Protip:** Writing down the pattern will only work up to a point! ヾ(-_- )ゞ
+
+![GameplayGif](images/gameplay.gif)
 
 ## Release History
 
@@ -195,10 +199,6 @@ These are tentative wire frames for the web application:
 ![GameWireframe](images/wireframe.png)
 
 **Description:** This is the layout of the game as it is running in the browser. Note this design will change throughout the development of this application.
-
-**Ending Wire frame**
-
-![PlaceHolder](images/placeholder.png)
 
 **Description:** Coming Soon
 
