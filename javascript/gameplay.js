@@ -45,6 +45,8 @@ export function userTurn(gameArray, position, didLose, id, diff) {
   }
 }
 function lose(rounds) {
+  sound.src = "../sounds/gameover.wav"
+  sound.play();
   console.log(`You lose: YOUR HIGH SCORE:\n ${rounds}\n Play again?`);
   // Function index resets everything
   document.getElementById(

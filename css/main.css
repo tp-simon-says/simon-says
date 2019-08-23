@@ -11,6 +11,7 @@
 .group-button {
   display: flex;
   justify-content: space-around;
+
 }
 
 .play-button {
@@ -45,7 +46,7 @@
 }
 
 #red:active {
-  background-color: #380000;
+  background-color: rgb(255, 0, 0);
 }
 
 #green {
@@ -63,7 +64,7 @@
 }
 
 #yellow:active {
-  background-color: #818a00;
+  background-color: black;
 }
 
 #groupButtons {
