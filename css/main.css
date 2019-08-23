@@ -1,3 +1,8 @@
+.easter-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -19,7 +24,6 @@
   outline: 0;
 }
 
-
 /* Style by ID */
 
 #start-button {
@@ -29,6 +33,7 @@
   z-index: 2;
   margin-top: 125px;
   border-radius: 250px;
+  outline: 0;
 }
 
 #blue {
@@ -76,7 +81,7 @@
 }
 
 body {
-  background: url('../images/Trippy-little-Black-gradients-Seamless-Pattern.jpg')
+  background: url('../images/Trippy-little-Black-gradients-Seamless-Pattern.jpg');
 }
 
 .button-container {
