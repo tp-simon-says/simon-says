@@ -1,4 +1,4 @@
-![DarkLogo](/home/rsanchez/Github/simon-says/images/logoDark.png)
+![DarkLogo](images/logoDark.png)
 
 > A memory enhancement game
 
@@ -199,6 +199,4 @@ These are tentative wire frames for the web application:
 ![GameWireframe](images/wireframe.png)
 
 **Description:** This is the layout of the game as it is running in the browser. Note this design will change throughout the development of this application.
-
-**Description:** Coming Soon
 
