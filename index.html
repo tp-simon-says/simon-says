@@ -5,50 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simon Says</title>
-    <!--  -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header><h1 class="title">Simon Says!</h1></header>
+    <header>
+      <img src="./images/logo.png" />
+    </header>
 
     <section class="button-container">
       <button id="start-button">
-        Start
+        <img id="start" class="shakeit" src="./images/PixelArt.png" />
       </button>
       <div id="white-space"></div>
       <table class="group-button">
         <tr>
           <th>
-            <button class="play-button" id="blue">
-              Blue
-            </button>
+            <button class="play-button" id="blue"></button>
           </th>
           <th>
-            <button class="play-button" id="red">
-              Red
-            </button>
+            <button class="play-button" id="red"></button>
           </th>
         </tr>
         <tr>
           <th>
-            <button
-              class="play-button"
-              id="green"
-            >
-              Green
-            </button>
+            <button class="play-button" id="green"></button>
           </th>
           <th>
-            <button
-              class="play-button"
-              id="yellow"
-            >
-              Yellow
-            </button>
+            <button class="play-button" id="yellow"></button>
           </th>
         </tr>
       </table>
     </section>
+
     <!-- JavaScript File Here -->
     <script defer src="./index.js" type="module"></script>
   </body>

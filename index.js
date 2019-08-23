@@ -31,3 +31,34 @@ for (const button of buttons) {
     }
   });
 }
+let interval;
+function shakeit (element){
+  element.style.display = "block";
+  var x = -1;
+  interval = setInterval(function(){
+    if(x==-1){
+      element.style.marginLeft = "-5px";
+      
+    }
+    else{
+      switch(x){
+        case 0:
+          element.style.marginLeft = "-10px";
+          break;
+          case 1: element.style.marginLeft = "0px";
+          element.style.marginTop = "10px";
+          break;
+          case 2: element.style.marginTop = "-10px";
+          break;
+          default: element.style.marginTop="0px";
+          clearInterval(interval);
+      }
+    }
+    x++
+  },50)
+}
+shakeit(document.getElementsByClassName("shakeit")[0]);
+setInterval(function(){
+  
+  shakeit(document.getElementsByClassName("shakeit")[0]);
+},2000)

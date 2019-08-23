@@ -16,7 +16,11 @@ export const selectDifficulty = val => {
 
 export const startGame = id => {
   // Change the UI for the Button to have three buttons
-  id.innerHTML = `<div id="groupButtons" ><button id="difficulty-buttons1">Classic</button><button id="difficulty-buttons2">Hard</button><button id="difficulty-buttons3">INSANE</button></div>`;
+  id.innerHTML = `<div id="groupButtons">
+  <img id="difficulty-buttons1" class="diff" src="./images/classic.png" />
+  <img id="difficulty-buttons2" class="diff" src="./images/hard.png" />
+  <img id="difficulty-buttons3" class="diff" src="./images/insane.png" />
+</div>`;
   console.log(id);
   document.getElementById('difficulty-buttons1').addEventListener(
     'click',

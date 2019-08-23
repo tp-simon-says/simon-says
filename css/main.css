@@ -36,7 +36,7 @@
 }
 
 #blue:active {
-  background-color: grey;
+  background-color: #080b30;
 }
 
 #red {
@@ -45,7 +45,7 @@
 }
 
 #red:active {
-  background-color: grey;
+  background-color: #380000;
 }
 
 #green {
@@ -54,7 +54,7 @@
 }
 
 #green:active {
-  background-color: grey;
+  background-color: #084600;
 }
 
 #yellow {
@@ -63,7 +63,7 @@
 }
 
 #yellow:active {
-  background-color: grey;
+  background-color: #818a00;
 }
 
 #groupButtons {
@@ -72,4 +72,34 @@
 
 .difficulty-buttons {
   z-index: 7;
+}
+
+body {
+  background: url('../images/Wiki-background.jpg')
+}
+
+.button-container {
+  padding-top: 2em;
+}
+
+.title {
+  color: white;
+}
+
+#start {
+  width: 135px;
+}
+
+header img {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+header p {
+  color: white;
+}
+
+.diff {
+  width: 105px;
 }
