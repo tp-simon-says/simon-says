@@ -1,0 +1,106 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.group-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.play-button {
+  height: 200px;
+  width: 200px;
+  outline: 0;
+}
+
+
+/* Style by ID */
+
+#start-button {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 125px;
+  border-radius: 250px;
+}
+
+#blue {
+  background-color: blue;
+  border-radius: 250px 0px 0px 0px;
+}
+
+#blue:active {
+  background-color: #080b30;
+}
+
+#red {
+  background-color: red;
+  border-radius: 0px 250px 0px 0px;
+}
+
+#red:active {
+  background-color: rgb(255, 0, 0);
+}
+
+#green {
+  background-color: green;
+  border-radius: 0px 0px 0px 250px;
+}
+
+#green:active {
+  background-color: #084600;
+}
+
+#yellow {
+  background-color: yellow;
+  border-radius: 0px 0px 250px 0px;
+}
+
+#yellow:active {
+  background-color: black;
+}
+
+#groupButtons {
+  z-index: 5;
+}
+
+.difficulty-buttons {
+  z-index: 7;
+}
+
+body {
+  background: url('../images/Trippy-little-Black-gradients-Seamless-Pattern.jpg')
+}
+
+.button-container {
+  padding-top: 2em;
+}
+
+.title {
+  color: white;
+}
+
+#start {
+  width: 135px;
+}
+
+header img {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+header p {
+  color: white;
+}
+
+.diff {
+  width: 105px;
+}
