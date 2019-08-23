@@ -18,7 +18,9 @@ Clone the repository and run the ``` index.html``` on a browser.
 
 ### Demo Game
 
-A running instance of the game can be found [here](https://rob-azali-simon-says.netlify.com) which is powered by [Netlify](https://www.netlify.com).
+A running instance of the game can be found right below **(Click on it)** which is powered by [Netlify](https://www.netlify.com).
+
+[![PlayButton](images/playbutton.png)](https://rob-azali-simon-says.netlify.com)
 
 ## Features
 
