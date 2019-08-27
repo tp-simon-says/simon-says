@@ -47,7 +47,9 @@ export function userTurn(gameArray, position, didLose, id, diff) {
       document.querySelector('body.easter-container').innerHTML = ``;
       document.querySelector(
         'body.easter-container'
-      ).style.backgroundImage = `url('../images/background-2.png')`;
+      ).style.backgroundImage = `url('../images/help_me.gif')`;
+      sound.src = '../sounds/laugh.wav';
+      sound.play();
       return -1;
     } else {
       return -1;
