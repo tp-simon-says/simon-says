@@ -1,4 +1,7 @@
+// Import for Sound
 const sound = new Audio();
+
+// Function generates the random number and pushes it to an array
 export function generateArray(tempArray, diff) {
 	for (let i = 0; i < diff; i++) {
 		tempArray.push(Math.ceil(Math.random() * 4));
@@ -6,6 +9,7 @@ export function generateArray(tempArray, diff) {
 	return tempArray;
 }
 
+// Atomic Functions
 function pressButton(buttonId) {
 	const temp = document.getElementById(buttonId);
 	temp.style.backgroundColor = 'black';
@@ -16,6 +20,7 @@ function unpressButton(buttonId) {
 	temp.style.backgroundColor = buttonId;
 }
 
+// Flash Button uses the Atomic Functions
 function flashButton(color) {
 	pressButton(color);
 	setTimeout(function() {
@@ -23,6 +28,7 @@ function flashButton(color) {
 	}, 500);
 }
 
+// Use to correspond sounds to the button pressed
 function echoPattern(num) {
 	switch (num) {
 		default:
@@ -51,6 +57,7 @@ function echoPattern(num) {
 	}
 }
 
+// playLoop iterates through the array and calls echoPattern
 export function playLoop(tempArray, i) {
 	setTimeout(function() {
 		echoPattern(tempArray[i]);
@@ -62,6 +69,7 @@ export function playLoop(tempArray, i) {
 	}, 750);
 }
 
+// setupCPU is the main function
 export function setupCPU(tempArray, diff) {
 	let i = 0;
 	generateArray(tempArray, diff);
