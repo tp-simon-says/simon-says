@@ -28,7 +28,7 @@ function flashButton(color) {
 	}, 500);
 }
 
-// Use to correspond sounds to the button pressed
+// Use to corresponding sounds to the button pressed
 function echoPattern(num) {
 	switch (num) {
 		default:
