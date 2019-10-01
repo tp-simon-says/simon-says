@@ -4,7 +4,7 @@
 
 ![Sample Screenshot](images/splash.gif)
 
-**Current Build:** Aug 23, 2019
+**Current Build:** As of Aug 23, 2019
 
 ## Getting Started
 
